@@ -6,11 +6,11 @@ Command-line Bugmark client written in Ruby.
 
 First: install Ruby on your machine!
 
-After that: to install the gem:
+After that, install the gem:
 
-    gem install specific_install
-    gem specific_install http://github.com/bugmark/bmx_api_ruby
-    gem specific_install http://github.com/bugmark/bmx_cl_ruby
+    sudo gem install specific_install
+    sudo gem specific_install http://github.com/bugmark/bmx_api_ruby
+    sudo gem specific_install http://github.com/bugmark/bmx_cl_ruby
     
 ## Usage
 
