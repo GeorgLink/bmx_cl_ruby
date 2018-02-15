@@ -14,10 +14,10 @@ class Issue < ThorBase
   end
 
   desc "sync ISSUE_EXID", "create or update an issue"
-  option :uuid       , desc: "TBD" , type: :string
+  option :uuid       , desc: "only required for updating existing issue" , type: :string
   option :repo_uuid  , desc: "UUID of issue repository" , type: :string , required: true
-  option :title      , desc: "TBD" , type: :string
-  option :status     , desc: "TBD" , type: :string
+  option :title      , desc: "Text describing issue, typically from issue tracker" , type: :string
+  option :status     , desc: "'fixed' or 'unfixed' (default: '???')" , type: :string
   option :labels     , desc: "TBD" , type: :string
   def sync(exid)
     repo_uuid = options["repo_uuid"]
